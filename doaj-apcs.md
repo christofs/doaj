@@ -28,6 +28,8 @@ The summary statistics are quite interesting, for the full data:
 * maximum: 7938 EUR
 * standard deviation: 622 EUR 
 
+Because more than 50% of the journals do not have an APC, the median is 0 EUR! And even in DOAJ data, some journals charge more than 7000 EUR! 
+
 And for only those 4932 journals with a non-zero APC: 
 
 * minimum: 0.01 EUR
@@ -65,15 +67,23 @@ When looking at the data from the point of view of the country of publication of
 
 ![Percentage of journals with an APC, by country](/figures/bar_apc-per-country.png) 
 
+In some rich countries, like the UK or Switzerland, APCs are very common. In other countries, notably in Latin America, APCs are very uncommon. Germany is somewhere in the middle, with 50% of journals having an APC. 
+
 When looking at the data from the point of view of rough scientific domains (summarized from the DOAJ domain-related information), the trend is also very clear. 
 
 ![Percentage of journals with an APC, by scientific domain](/figures/bar_apc-per-domain.png) 
+
+APCs are common in Science and Medicine, and uncommon in Social Sciences and Humanities. 
 
 
 ## Conclusion 
 
 Most OA journals do not charge APCs at all (72%). Another 13% charge low to moderate APCs (up to 500 EUR). Yet another group, around 14%, charge mid-range APCs (between 500 and 3000 EUR). And a last, very small, group, around 0.5% (or 99 journals), charge APCs above 3000 EUR. 
 
-APCs depend heavily on the country where the journal's publisher is located and on the scientific domain they are active in. In the Humanities, APCs are unusual (only 20% of journals have one). In the UK, more than 80% of journals have an APC, whereas in Germany, this is only at around 50%. 
+APCs depend heavily on the country where the journal's publisher is located and on the scientific domain they are active in. In the Humanities, APCs are unusual (only 20% of journals have one). In the UK, more than 80% of journals have an APC.  
+
+
+
+
 
 
