@@ -235,7 +235,7 @@ def make_histogram2(data):
                         x="APC-EUR",
                         bins=100,
                         kde=False,
-                        #stat="percent"
+                        stat="percent"
                         )
     plt.title("Distribution of midrange APCs in DOAJ (500-3000 EUR, n=" + str(n) + ")")
     plt.savefig(join(workdir, "..", "figures", "APC-histogram_midrange.png"), dpi=300)
