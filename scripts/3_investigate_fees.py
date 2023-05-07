@@ -41,6 +41,7 @@ def read_csv():
         data = data.loc[:,["EISSN", "title", "publisher-country", "APC", "APC-amount", "CCBY", "domain"]]
         #print(data.head())
         #print(list(data.columns))
+        print(Counter(list(data["publisher-country"])))
         return data
 
 
@@ -270,6 +271,21 @@ def make_histogram4(data):
     plt.close()
 
 
+def make_histogram5(data): 
+    data = data[data["publisher-country"] == "Russia"]
+    n = len(data)
+    plot = sns.histplot(data,
+                        x="APC-EUR",
+                        bins=50,
+                        kde=False,
+                        stat="percent"
+                        )
+    plt.title("Distribution of APCs in DOAJ (Russia only, n=" + str(n) + ")")
+    plt.savefig(join(workdir, "..", "figures", "APC-histogram_country-RUS.png"), dpi=300)
+    plt.close()
+
+
+
 def save_data(data): 
     """
     Save the resulting DataFrame to CSV. 
@@ -291,5 +307,6 @@ def main():
     make_histogram2(data)
     make_histogram3(data)
     make_histogram4(data)
+    make_histogram5(data)
 
 main()
