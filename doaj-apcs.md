@@ -8,6 +8,8 @@ All data comes from DOAH's public data dump: https://doaj.org/docs/public-data-d
 
 The data was collected on January 4, 2023. It contains information about 17850 different journals. 
 
+Please note that the data may be biased in several ways, for example because some publishers may not be interest in applying to be listed in DOAJ. Also, the analyses proposed here have not undergone any peer-review process or other quality assurance mechanism. 
+
 ## Issue 
 
 I wanted to find out what APCs are typical in OA journals, internationally. In order to be able to anwer this question, I used the information in the DOAJ dataset about APCs. The main difficulty was to convert the various currencies to one currency for comparison. I selected the EUR as the comparison currency. 
